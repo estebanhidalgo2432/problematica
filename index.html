@@ -1,65 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ticket Up - Entradas para Conciertos y Eventos</title>
-
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-
-  <header >
-    <div>
-      <img src="img/logo.png" alt="PuntoTicket">
-      <nav>
-        <ul>
-          <li><a href="#">Inicio </a></li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Equipo</a></li>
-          <li><a href="#">Contacto</a></li>
+  <header>
+    <div class="header-content">
+      <img src="img/logo.png" alt="PuntoTicket" class="logo">
+      <nav class="navbar">
+        <ul class="nav">
+          <li><a href="#Inicio" class="active">Inicio</a></li>
+          <li><a href="#Eventos">Eventos</a></li>
+          <li><a href="#Equipo">Equipo</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-
-    <section>
+    <section class="hero" id="Inicio">
       <div>
         <h1>Compra tus entradas favoritas</h1>
         <p>Conciertos, festivales, obras de teatro y más</p>
       </div>
     </section>
 
-    <section>
+    <section class="eventos" id="Eventos">
       <h2>Eventos Destacados</h2>
-      <div>
-        <article>
+      <div class="evento-grid">
+        <article class="evento-card">
           <img src="img/evento1.jpg" alt="Bad Bunny">
           <p>Movistar Arena - Santiago / Heavy Metal</p>
           <h3>MR BUNGLE</h3>
           <p>08 de octubre 2025</p>
-          <a href="#">Comprar Entrada</a>
+          <a href="#" class="btn-comprar">Comprar Entrada</a>
         </article>
-        <article>
+        <article class="evento-card">
           <img src="img/evento2.jpg" alt="Festival Primavera">
           <p>Teatro Oriente - Providencia / Podcast</p>
           <h3>Trascender - Ley de Murphy</h3>
           <p>29 de abril 2025 - 27 de mayo 2025</p>
-          <a href="#">Comprar Entrada</a>
+          <a href="#" class="btn-comprar">Comprar Entrada</a>
         </article>
-        <article>
+        <article class="evento-card">
           <img src="img/evento3.jpg" alt="Ana Tijoux">
           <p>Movistar Arena - Santiago / Urbano</p>
           <h3>Duki - World Tour</h3>
           <p>05 de julio 2025 - 06 de julio 2025</p>
-          <a href="#">Comprar Entrada</a>
+          <a href="#" class="btn-comprar">Comprar Entrada</a>
         </article>
       </div>
+
     </section>
-    <section>
+
+    <section class="eventos" id="Equipo">
+      <h2>Organizadores y Produccion</h2>
+      <div class="evento-grid">
+        <article class="evento-card">
+          <img src="img/persona1.png" alt="">
+          <h1>Camila Rios</h1>
+          <p>Productora general</p>
+        </article>
+        <article class="evento-card">
+          <img src="img/persona2.png" alt="">
+          <h1>Martin Lopez</h1>
+          <p>Director Tecnico</p>
+        </article>
+        <article class="evento-card">
+          <img src="img/persona3.png" alt="">
+          <h1>Sofia Valenzuela</h1>
+          <p>Gestora Cultural</p>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="contacto" id="Contacto">
       <aside>
         <h2>Contacto</h2>
         <p>800 20 20 20</p>
@@ -91,6 +111,42 @@
       </form>
     </section>
   </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="TicketUp Logo" />
+        </div>
+    
+        <div class="footer-section">
+          <h4>CONOZCÁMONOS</h4>
+          <ul>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Código de ética</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section">
+          <h4>TRABAJEMOS JUNTOS</h4>
+          <ul>
+            <li><a href="#">¿Tienes un evento?</a></li>
+            <li><a href="#">Venta empresas</a></li>
+            <li><a href="#">Envíanos tu CV</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section">
+          <h4>CONVERSEMOS</h4>
+          <div class="redes">
+            <a href="#"><img src="img/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="img/instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="img/whatsapp.svg" alt="WhatsApp" /></a>
+          </div>
+          <a href="#" class="btn-ayuda">Centro de ayuda</a>
+        </div>
+      </div>
+  </footer>
 </body>
 
 </html>
